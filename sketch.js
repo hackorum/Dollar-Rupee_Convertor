@@ -10,8 +10,8 @@ function setup() {
    button.position(input.x + input.width, 65);
    button.mousePressed(DollarInRupee);
 
-   greeting = createElement('h2', 'Enter amount in dollars $:');
-   greeting.position(20, 5);
+   sentence = createElement('h2', 'Enter amount in dollars $:');
+   sentence.position(20, 5);
 
    textAlign(CENTER);
    textSize(50);
@@ -24,7 +24,7 @@ async function DollarInRupee() {
   var rates = responseJSON.rates;
   var inr = rates.INR;
 
-  greeting.html('Amount in ₹upees: ' + dollar*inr);
+  sentence.html('Amount in ₹upees: ' + dollar*inr);
   input.value('');
 
 }
