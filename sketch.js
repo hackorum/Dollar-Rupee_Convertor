@@ -1,4 +1,4 @@
-var input, button, dollartorupee;
+var input, button, sentence, dollartorupee;
 
 function setup() {
    createCanvas(710, 400);
