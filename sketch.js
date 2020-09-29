@@ -1,4 +1,5 @@
-var input, button, sentence, dollartorupee;
+var input, button, sentence;
+var y = 65;
 
 function setup() {
    createCanvas(710, 400);
@@ -24,7 +25,10 @@ async function DollarInRupee() {
   var rates = responseJSON.rates;
   var inr = rates.INR;
 
-  sentence.html('Amount in ₹upees: ' + dollar*inr);
+  // sentence.html('Amount in ₹upees: ' + dollar*inr);
+  y+=25;
+  var convertedValue = createP("Rs. "+dollar*inr);
+  convertedValue.position(20,y);
   input.value('');
 
 }
