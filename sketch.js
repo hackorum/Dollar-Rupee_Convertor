@@ -1,18 +1,20 @@
-var input, button, sentence;
+var sel1,sel2, button, sentence;
 var y = 65;
 
 function setup() {
    createCanvas(710, 400);
 
-   input = createInput();
-   input.position(20, 65);
+   sel1 = 
 
-   button = createButton('convert');
-   button.position(input.x + input.width, 65);
-   button.mousePressed(DollarInRupee);
-
-   sentence = createElement('h2', 'Enter amount in dollars $:');
-   sentence.position(20, 5);
+   // input = createInput();
+   // input.position(20, 65);
+   //
+   // button = createButton('convert');
+   // button.position(input.x + input.width, 65);
+   // button.mousePressed(DollarInRupee);
+   //
+   // sentence = createElement('h2', 'Enter amount in dollars $:');
+   // sentence.position(20, 5);
 
    textAlign(CENTER);
    textSize(50);
