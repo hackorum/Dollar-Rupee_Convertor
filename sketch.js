@@ -4,7 +4,7 @@ var y = 65;
 function setup() {
    createCanvas(710, 400);
 
-   sel1 = 
+   sel1 =
 
    // input = createInput();
    // input.position(20, 65);
